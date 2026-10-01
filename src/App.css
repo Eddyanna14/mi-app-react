@@ -1,0 +1,298 @@
+/* Estructura general */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Encabezado */
+
+.encabezado {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 28px 20px 22px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.encabezado h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #292c35;
+}
+
+.encabezado p {
+  margin: 7px 0 0;
+  color: #777b85;
+  font-size: 14px;
+}
+
+/* Menú */
+
+.menu {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+
+.menu button {
+  border: none;
+  background-color: transparent;
+  color: #555963;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu button:hover {
+  background-color: #f1f2f6;
+}
+
+.menu button.activo {
+  background-color: #e9e7f8;
+  color: #51469b;
+}
+
+/* Área principal */
+
+.contenido {
+  width: 90%;
+  max-width: 850px;
+  margin: 45px auto;
+  flex: 1;
+}
+
+/* Página de inicio */
+
+.inicio {
+  width: 100%;
+}
+
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 35px;
+}
+
+.texto-presentacion {
+  max-width: 500px;
+}
+
+.saludo {
+  color: #6b61a8;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.texto-presentacion h2 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  color: #272a31;
+}
+
+.texto-presentacion p {
+  line-height: 1.7;
+  color: #62656d;
+  font-size: 16px;
+}
+
+/* Foto */
+
+.foto {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Datos personales */
+
+.informacion {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 1px solid #e4e5e9;
+}
+
+.informacion h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #292c35;
+}
+
+.dato {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0;
+  border-bottom: 1px solid #eeeeef;
+}
+
+.dato:last-child {
+  border-bottom: none;
+}
+
+.dato span {
+  color: #777b83;
+}
+
+.dato p {
+  margin: 0;
+  color: #292c35;
+  font-weight: 600;
+}
+
+/* Otras páginas */
+
+.pagina {
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #e4e5e9;
+  border-radius: 10px;
+}
+
+.pagina h2 {
+  margin-top: 0;
+  color: #292c35;
+}
+
+.pagina p {
+  color: #686b73;
+  line-height: 1.6;
+}
+
+/* Pie de página */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #8a8d94;
+  font-size: 13px;
+  border-top: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+/* Formularios */
+
+.formulario {
+  max-width: 450px;
+  margin-top: 25px;
+}
+
+.formulario label {
+  display: block;
+  margin: 18px 0 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #454851;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8d9de;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+  background-color: #ffffff;
+  color: #292c35;
+}
+
+.formulario input:focus {
+  border-color: #6b61a8;
+}
+
+.boton-principal {
+  margin-top: 22px;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 7px;
+  background-color: #6257a5;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-principal:hover {
+  background-color: #51478f;
+}
+
+.resultado {
+  margin-top: 25px;
+  padding: 18px;
+  background-color: #f3f2fa;
+  border-left: 4px solid #6257a5;
+  border-radius: 6px;
+}
+
+.resultado span {
+  display: block;
+  color: #777985;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.resultado strong {
+  font-size: 24px;
+  color: #292c35;
+}
+/* Celulares */
+
+@media (max-width: 650px) {
+  .presentacion {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .texto-presentacion h2 {
+    font-size: 26px;
+  }
+
+  .dato {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+}
+/* Experiencia */
+
+.video-contenedor {
+  margin-top: 30px;
+}
+
+.video-pendiente {
+  padding: 45px 20px;
+  text-align: center;
+  background-color: #f8f8fb;
+  border: 1px dashed #b8b5ca;
+  border-radius: 10px;
+}
+
+.video-pendiente span {
+  font-size: 40px;
+}
+
+.video-pendiente h3 {
+  margin: 15px 0 8px;
+  color: #292c35;
+}
+
+.video-pendiente p {
+  margin: 0;
+  color: #777985;
+}
