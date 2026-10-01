@@ -445,23 +445,20 @@ function App() {
     <h2>🎥 Mi Experiencia</h2>
 
     <p>
-      En este video comparto mi experiencia realizando esta práctica,
-      los retos que encontré y lo que aprendí durante el desarrollo
-      de la aplicación con React.
+      En este video comparto mi experiencia desarrollando esta aplicación
+      en React, los retos que encontré durante el proceso y los conocimientos
+      que pude adquirir con esta práctica.
     </p>
 
     <div className="video-contenedor">
-
-      <div className="video-pendiente">
-        <span>🎬</span>
-
-        <h3>Video de mi experiencia</h3>
-
-        <p>
-          El video será agregado al finalizar el proyecto.
-        </p>
-      </div>
-
+      <iframe
+        className="video-youtube"
+        src="https://www.youtube.com/embed/LCOazvDZQ3s"
+        title="Mi experiencia desarrollando una aplicación en React"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
     </div>
 
   </section>
